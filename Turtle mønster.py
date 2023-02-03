@@ -3,9 +3,11 @@ import turtle
 circles = 1
 t = turtle
 increment = 1
-t.speed("fastest")
+t.speed(0)
 
-for x in range(999):
+t.tracer(False)
+
+while True:
     t.shape("turtle")
 
     t.penup()
@@ -39,3 +41,5 @@ for x in range(999):
     turtle.pencolor("violet")
     t.circle(circles)
     circles += increment
+    
+    turtle.update()
